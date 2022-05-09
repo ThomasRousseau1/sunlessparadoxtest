@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 3.5rem;
+    background-color: #000;
+    // position: fixed;
+    border-bottom: 1px solid $colour-primary;
+    width: 100%;
+    &__nav {
+        display: flex;
+        justify-content: center;
+        & a {
+            padding: 0 1rem 0 1rem;
+            transition: 300ms;
+            &:hover {
+                color: $colour-primary;
+            }
+        }
+    }
+    &__socials {
+        color: #fff;
+        & a {
+            padding: 0 0.4rem 0 0.4rem;
+        }
+    }
+}
+
+#fixed {
+    position: fixed;
+}

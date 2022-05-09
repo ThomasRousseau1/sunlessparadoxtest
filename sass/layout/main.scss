@@ -1,0 +1,173 @@
+//ACCUEIL
+//Main banne
+.news {
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 30rem;
+    }
+    &__container {
+        background-color: #171717;
+        text-align: center;
+        padding: 3rem 0 3rem 0;
+        margin-bottom: 5rem;
+        & p {
+            font-weight: bold;
+            color: #fff;
+        }
+        & p:first-child {
+            font-size: 1.5rem;
+            margin: 0 0 0.5rem 0;
+        }
+        & p:nth-child(2) {
+            font-size: 3.5rem;
+            margin: 2rem 2rem ;
+        }
+        & p:nth-child(3) {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+//Partie dates
+.tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    &__container {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        background-color: #171717;
+        margin: 0.5rem 0.5rem;
+        padding: 1rem;
+        align-items: center;
+        .tour__date {
+            & p {
+                margin: 0.5rem 0.5rem;
+            }
+            & p:nth-child(2) {
+                color: #E1AD01;
+            }
+        }
+        .tour__ticket {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    & a {
+        margin-top: 2rem;
+    }
+}
+
+//Partie merch
+.merch {
+    width: 100%;
+    height: 25rem;
+    .merch__img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    & a {
+        position: relative;
+        bottom: 50%;
+        margin-left: 10%;
+    }
+}
+
+//Partie réseaux
+.socials {
+    width: 100%;
+    height: 30rem;
+}
+
+//PAGE MERCH
+h1 {
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 5rem;
+}
+.products {
+    width: 100%;
+    color: #fff;
+    margin-bottom: 8rem;
+    &__quote {
+        text-align: center;
+        & a {
+            color: $colour-primary;
+        }
+    }
+    .products__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .products__product {
+            height: 30rem;
+            width: 20rem;
+            margin: 1rem;
+            background-color: #fff;
+            position: relative;
+            padding: 1rem;
+            & img {
+                width: 100%;
+                object-fit: cover;
+            }
+            & #img__back {
+                display: none;
+                visibility: hidden;
+            }
+            &:hover {
+                #img__front {
+                    display: none;
+                    visibility: hidden;
+                }
+                #img__back {
+                    display: block;
+                    visibility: visible;
+                }
+            }
+        }
+        .products__infos {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #171717;
+            background-color: $colour-primary;
+            & p {
+                margin: 0.5rem 0 0.5rem 0;
+                padding-left: 1rem;
+            }
+            & h3 {
+                margin-bottom: 0;
+                padding-left: 1rem;
+            }
+            .products__size {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem 0 1rem 0;
+                & select {
+                    margin-left: 1rem;
+                    border: none;
+                    border-radius: 5px;
+                }
+                & p {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+//PAGE MUSIQUE
+.musique {
+    height: 100rem;
+}
